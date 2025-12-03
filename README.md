@@ -188,6 +188,18 @@ Understanding event complexity through the number of markets (outcomes) per even
 | `polymarket_events.csv` | 87,680 | 67 | 200MB | Event-level data |
 | `polymarket_markets.csv` | 201,590 | 106 | 400MB | Market-level data |
 
+### 📥 Data Access
+
+Due to GitHub's file size limitations, the full datasets are hosted on Kaggle:
+
+**🔗 [Download Full Dataset on Kaggle](https://www.kaggle.com/datasets/ismetsemedov/polymarket)**
+
+The Kaggle dataset includes:
+- Complete `polymarket_events.csv` (200MB, 87,680 rows)
+- Complete `polymarket_markets.csv` (400MB, 201,590 rows)
+- All fields preserved with zero data loss
+- Ready for analysis in Python, R, or any data science tool
+
 ### Data Completeness
 - ✅ **All 2,192 pages fetched** from API
 - ✅ **Zero data loss** - nested structures preserved as JSON
@@ -211,8 +223,6 @@ polymarket_com/
 ├── fetch_polymarket_data.py       # Async data fetcher
 ├── visualize_market_data.py       # Analysis & visualization script
 ├── analyze_data.py                # Quick analysis tool
-├── polymarket_events.csv          # Events dataset (200MB)
-├── polymarket_markets.csv         # Markets dataset (400MB)
 └── charts/                        # Generated visualizations
     ├── 01_top_events_volume.png
     ├── 02_category_distribution.png
@@ -224,19 +234,17 @@ polymarket_com/
     └── 08_markets_per_event.png
 ```
 
+**Note:** CSV datasets (600MB total) are hosted on [Kaggle](https://www.kaggle.com/datasets/ismetsemedov/polymarket) due to GitHub file size limits.
+
 ---
 
 ## 🚀 Usage
 
-### Fetch Latest Data
+### Option 1: Use Pre-collected Data
 
-```bash
-python3 fetch_polymarket_data.py
-```
-
-Fetches all events from Polymarket API using async requests. Completed in ~3-5 minutes.
-
-### Generate Analysis
+1. **Download datasets from Kaggle:** [https://www.kaggle.com/datasets/ismetsemedov/polymarket](https://www.kaggle.com/datasets/ismetsemedov/polymarket)
+2. Place CSV files in project directory
+3. Run analysis:
 
 ```bash
 python3 visualize_market_data.py
@@ -244,13 +252,19 @@ python3 visualize_market_data.py
 
 Creates all 8 visualizations and generates insights report.
 
-### Quick Stats
-
 ```bash
 python3 analyze_data.py
 ```
 
 Displays summary statistics in terminal.
+
+### Option 2: Fetch Fresh Data
+
+```bash
+python3 fetch_polymarket_data.py
+```
+
+Fetches all events from Polymarket API using async requests. Completed in ~3-5 minutes. Then run analysis scripts above.
 
 ---
 
@@ -295,6 +309,7 @@ Displays summary statistics in terminal.
 ## 🔗 Resources
 
 - **Polymarket Platform:** [https://polymarket.com](https://polymarket.com)
+- **Full Dataset on Kaggle:** [https://www.kaggle.com/datasets/ismetsemedov/polymarket](https://www.kaggle.com/datasets/ismetsemedov/polymarket)
 - **API Documentation:** Gamma API (public search endpoint)
 - **Data Format:** CSV with JSON-encoded nested structures
 
