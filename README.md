@@ -192,7 +192,7 @@ Understanding event complexity through the number of markets (outcomes) per even
 
 Due to GitHub's file size limitations, the full datasets are hosted on Kaggle:
 
-**🔗 [Download Full Dataset on Kaggle](https://www.kaggle.com/datasets/ismetsemedov/polymarket)**
+**🔗 [Download Full Dataset on Kaggle](https://www.kaggle.com/datasets/ismetsemedov/polymarket-prediction-markets)**
 
 The Kaggle dataset includes:
 - Complete `polymarket_events.csv` (100MB, 43,840 rows)
@@ -234,7 +234,7 @@ polymarket_com/
     └── 08_markets_per_event.png
 ```
 
-**Note:** CSV datasets (600MB total) are hosted on [Kaggle](https://www.kaggle.com/datasets/ismetsemedov/polymarket) due to GitHub file size limits.
+**Note:** CSV datasets (302MB total) are hosted on [Kaggle](https://www.kaggle.com/datasets/ismetsemedov/polymarket-prediction-markets) due to GitHub file size limits.
 
 ---
 
@@ -242,7 +242,7 @@ polymarket_com/
 
 ### Option 1: Use Pre-collected Data
 
-1. **Download datasets from Kaggle:** [https://www.kaggle.com/datasets/ismetsemedov/polymarket](https://www.kaggle.com/datasets/ismetsemedov/polymarket)
+1. **Download datasets from Kaggle:** [https://www.kaggle.com/datasets/ismetsemedov/polymarket-prediction-markets](https://www.kaggle.com/datasets/ismetsemedov/polymarket-prediction-markets)
 2. Place CSV files in project directory
 3. Run analysis:
 
@@ -309,7 +309,7 @@ Fetches all events from Polymarket API using async requests. Completed in ~3-5 m
 ## 🔗 Resources
 
 - **Polymarket Platform:** [https://polymarket.com](https://polymarket.com)
-- **Full Dataset on Kaggle:** [https://www.kaggle.com/datasets/ismetsemedov/polymarket](https://www.kaggle.com/datasets/ismetsemedov/polymarket)
+- **Full Dataset on Kaggle:** [https://www.kaggle.com/datasets/ismetsemedov/polymarket-prediction-markets](https://www.kaggle.com/datasets/ismetsemedov/polymarket-prediction-markets)
 - **API Documentation:** Gamma API (public search endpoint)
 - **Data Format:** CSV with JSON-encoded nested structures
 
