@@ -21,7 +21,7 @@ PARAMS = {
     "type": "events",
     # Removed events_status filter to fetch ALL events (active, closed, archived)
     "sort": "volume_24hr",
-    "presets": ["EventsTitle", "Events"]
+    "presets": "Events"  # Fixed: using single preset to avoid duplicates
 }
 
 

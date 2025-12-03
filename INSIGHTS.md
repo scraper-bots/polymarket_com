@@ -2,14 +2,14 @@
 # KEY INSIGHTS FROM POLYMARKET DATA ANALYSIS
 
 ## Market Size & Scale
-- **Total Events**: 87,680
-- **Total Markets**: 201,590
+- **Total Events**: 43,840
+- **Total Markets**: 100,795
 - **Average Markets per Event**: 2.3
 
 ## Trading Activity
-- **All-Time Volume**: $15.98B
-- **24-Hour Volume**: $300.1M
-- **Total Liquidity**: $630.2M
+- **All-Time Volume**: $7.99B
+- **24-Hour Volume**: $150.1M
+- **Total Liquidity**: $315.1M
 - **Average Event Volume**: $193.5K
 
 ## Market Status
@@ -23,14 +23,14 @@
 - **24h Volume**: $14.96M
 
 ## Most Popular Categories
-1. **Hide From New**: 51,734 events
-2. **Crypto**: 49,748 events
-3. **Up or Down**: 49,694 events
-4. **Recurring**: 49,362 events
-5. **Crypto Prices**: 49,094 events
+1. **Hide From New**: 25,867 events
+2. **Crypto**: 24,874 events
+3. **Up or Down**: 24,847 events
+4. **Recurring**: 24,681 events
+5. **Crypto Prices**: 24,547 events
 
 ## Recent Activity
-- **Events Created (Last 30 Days)**: 48,660
+- **Events Created (Last 30 Days)**: 23,923
 - **Event Date Range**: 2022-07-27 to 2025-12-03
 
 ## Key Findings

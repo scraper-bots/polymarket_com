@@ -1,6 +1,6 @@
 # Polymarket Data Analysis
 
-> Comprehensive analysis of 87,680 prediction market events and 201,590 individual markets from Polymarket
+> Comprehensive analysis of 43,840 prediction market events and 100,795 individual markets from Polymarket
 
 ---
 
@@ -12,13 +12,13 @@ Polymarket is one of the world's largest prediction markets platforms, enabling 
 
 | Metric | Value |
 |--------|-------|
-| **Total Events** | 87,680 |
-| **Total Markets** | 201,590 |
-| **All-Time Volume** | $15.98B |
-| **24-Hour Volume** | $300.1M |
-| **Total Liquidity** | $630.2M |
+| **Total Events** | 43,840 |
+| **Total Markets** | 100,795 |
+| **All-Time Volume** | $7.99B |
+| **24-Hour Volume** | $150.1M |
+| **Total Liquidity** | $315.1M |
 | **Average Markets per Event** | 2.3 |
-| **Events Created (Last 30 Days)** | 48,660 |
+| **Events Created (Last 30 Days)** | 23,923 |
 | **Platform Lifespan** | July 2022 - Present |
 
 ---
@@ -52,9 +52,9 @@ Understanding the scale of capital flowing through Polymarket across different t
 ![Volume Metrics](charts/03_volume_metrics.png)
 
 **Key Findings:**
-- **$15.98B total volume** demonstrates massive platform adoption
-- **$300M daily volume** shows sustained high engagement
-- **$630M in liquidity** provides depth for market makers
+- **$7.99B total volume** demonstrates massive platform adoption
+- **$150M daily volume** shows sustained high engagement
+- **$315M in liquidity** provides depth for market makers
 - **$193K average event volume** indicates healthy mid-tier market activity
 
 ---
@@ -88,7 +88,7 @@ Event creation timeline showing Polymarket's growth trajectory.
 
 ![Events Timeline](charts/06_events_timeline.png)
 
-**Key Insight:** Explosive growth in event creation starting from late 2024, with 48,660 events created in the last 30 days alone. This represents a dramatic acceleration in platform activity, likely driven by automated market creation and increased user adoption.
+**Key Insight:** Explosive growth in event creation starting from late 2024, with 23,923 events created in the last 30 days alone. This represents a dramatic acceleration in platform activity, likely driven by automated market creation and increased user adoption.
 
 ---
 
@@ -124,15 +124,15 @@ Understanding event complexity through the number of markets (outcomes) per even
 ### Platform Characteristics
 
 #### Scale & Growth
-- **87,680 events** processed since July 2022
+- **43,840 events** processed since July 2022
 - **55% of all events** created in the last 30 days, indicating exponential growth
-- **201,590 markets** offer granular prediction options
+- **100,795 markets** offer granular prediction options
 - Platform activity has accelerated dramatically in 2024-2025
 
 #### Trading Activity
-- **$15.98B lifetime volume** positions Polymarket as a major prediction market platform
-- **$300M daily volume** demonstrates sustained user engagement
-- **$630M in liquidity** ensures price efficiency and low slippage
+- **$7.99B lifetime volume** positions Polymarket as a major prediction market platform
+- **$150M daily volume** demonstrates sustained user engagement
+- **$315M in liquidity** ensures price efficiency and low slippage
 - **$193K average event volume** shows healthy participation beyond mega-events
 
 #### Category Breakdown
@@ -185,8 +185,8 @@ Understanding event complexity through the number of markets (outcomes) per even
 
 | File | Rows | Columns | Size | Description |
 |------|------|---------|------|-------------|
-| `polymarket_events.csv` | 87,680 | 67 | 200MB | Event-level data |
-| `polymarket_markets.csv` | 201,590 | 106 | 400MB | Market-level data |
+| `polymarket_events.csv` | 43,840 | 67 | 100MB | Event-level data |
+| `polymarket_markets.csv` | 100,795 | 106 | 202MB | Market-level data |
 
 ### 📥 Data Access
 
@@ -195,8 +195,8 @@ Due to GitHub's file size limitations, the full datasets are hosted on Kaggle:
 **🔗 [Download Full Dataset on Kaggle](https://www.kaggle.com/datasets/ismetsemedov/polymarket)**
 
 The Kaggle dataset includes:
-- Complete `polymarket_events.csv` (200MB, 87,680 rows)
-- Complete `polymarket_markets.csv` (400MB, 201,590 rows)
+- Complete `polymarket_events.csv` (100MB, 43,840 rows)
+- Complete `polymarket_markets.csv` (202MB, 100,795 rows)
 - All fields preserved with zero data loss
 - Ready for analysis in Python, R, or any data science tool
 
@@ -277,8 +277,8 @@ Fetches all events from Polymarket API using async requests. Completed in ~3-5 m
 - High competitiveness score
 
 ### Platform Velocity
-- **48,660 events** created in last 30 days
-- **1,622 events/day** average creation rate
+- **23,923 events** created in last 30 days
+- **797 events/day** average creation rate
 - **55%** of all events created recently
 
 ### Market Depth
@@ -290,7 +290,7 @@ Fetches all events from Polymarket API using async requests. Completed in ~3-5 m
 
 ## 🎯 Key Takeaways
 
-1. **Massive Scale:** Polymarket has evolved into a $16B volume prediction market platform with nearly 88K events.
+1. **Significant Scale:** Polymarket has evolved into an $8B volume prediction market platform with nearly 44K events.
 
 2. **Crypto Dominance:** Over 50% of events relate to cryptocurrency, making Polymarket a de facto crypto prediction platform.
 
@@ -300,7 +300,7 @@ Fetches all events from Polymarket API using async requests. Completed in ~3-5 m
 
 5. **Binary Focus:** Average 2.3 markets per event reflects platform optimization for simple, binary prediction markets.
 
-6. **High Engagement:** $300M daily volume demonstrates sustained user interest and platform utility.
+6. **High Engagement:** $150M daily volume demonstrates sustained user interest and platform utility.
 
 7. **Automated Ecosystem:** Evidence of automated market creation systems, particularly in crypto price predictions.
 
@@ -335,6 +335,7 @@ This analysis is for informational and research purposes only. Data sourced from
 ---
 
 **Generated:** December 3, 2025
-**Data Points Analyzed:** 289,270 (87,680 events + 201,590 markets)
+**Data Points Analyzed:** 144,635 (43,840 events + 100,795 markets)
 **Analysis Tool:** Python 3.10+ with pandas, matplotlib, seaborn
 **Processing Time:** ~3 minutes (data fetch) + ~30 seconds (analysis)
+**Data Quality:** Deduplicated and verified - zero duplicate records
